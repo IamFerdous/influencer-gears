@@ -182,3 +182,29 @@ footer {
   height: 250px;
   background: #0a0826;
 }
+footer h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+footer p {
+  font-size: 14px;
+  color: #d9dbe1;
+  text-align: center;
+}
+.social-icon {
+  text-align: center;
+  padding: 15px;
+}
+i.fab {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0 0 2px #888;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  background: #181616;
+}
