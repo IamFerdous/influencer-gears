@@ -1,6 +1,6 @@
 /* Fonts */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 /* Common CSS */
 
@@ -19,6 +19,23 @@ header {
   max-width: 85%;
   margin: 0 auto;
   padding: 0 25px;
+}
+.primary-button {
+  margin-top: 20px;
+  border: 0;
+  background: #e02c6d;
+  padding: 0;
+  border-radius: 41px;
+  display: inline-flex;
+}
+.button-text,
+.button-icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  height: 100%;
 }
 /* Header Section */
 
@@ -45,4 +62,37 @@ nav {
   padding: 15px 20px;
   font-size: 16px;
   font-weight: 600;
+}
+
+.banner {
+  height: calc(100vh - 190px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 80px;
+}
+.banner-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 40px;
+}
+.banner-left h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #3a3a3a;
+}
+.banner-left p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+.banner-right {
+  padding-left: 40px;
+}
+.banner-right img {
+  width: 75%;
+  background-image: url("./images/circle-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
