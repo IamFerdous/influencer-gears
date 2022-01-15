@@ -240,7 +240,8 @@ i.fab {
 /* Mobile Devices */
 
 @media only screen and (max-width: 688px) {
-  header {
+  header,
+  main {
     width: 100%;
     padding: 20px 0;
   }
@@ -274,13 +275,18 @@ i.fab {
 /* Tablet Devices */
 
 @media only screen and (min-width: 688px) and (max-width: 992px) {
-  header {
+  header,
+  main {
     width: 100%;
   }
   .navigation li a {
     padding: 5px;
   }
-  .banner {
+  .banner,
+  .products {
+    height: 100%;
+    padding: 10px;
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 0;
   }
   .banner-right {
