@@ -174,9 +174,8 @@ nav {
   align-items: flex-end;
   font-weight: 700;
   font-size: 16px;
-  position: relative;
-  top: 0;
-  right: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 .see-more span {
   color: #e02c6d;
@@ -234,4 +233,57 @@ i.fab {
   text-decoration: none;
   color: #fff;
   background: #181616;
+}
+
+/* Media Query */
+
+/* Mobile Devices */
+
+@media only screen and (max-width: 688px) {
+  header {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .navigation {
+    display: none;
+  }
+  .banner {
+    height: 100%;
+    padding: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .banner-left {
+    margin-bottom: 50px;
+    margin-top: 0;
+  }
+  .banner-left h1 {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+  }
+  .banner-left p {
+    font-size: 14px;
+  }
+  .products,
+  .buyer-reviews {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Tablet Devices */
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  header {
+    width: 100%;
+  }
+  .navigation li a {
+    padding: 5px;
+  }
+  .banner {
+    margin-top: 0;
+  }
+  .banner-right {
+    align-items: center;
+  }
 }
