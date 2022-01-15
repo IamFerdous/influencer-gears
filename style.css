@@ -112,7 +112,7 @@ nav {
 
 .product-section {
   margin-top: 40px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .product-section h2 {
   text-align: center;
@@ -121,7 +121,8 @@ nav {
   line-height: 70px;
   color: #3a3a3a;
 }
-.products {
+.products,
+.buyer-reviews {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px;
@@ -158,7 +159,8 @@ nav {
 .product span p {
   color: #5e6366;
 }
-.product p {
+.product p,
+.reviews p {
   padding: 10px 0;
   color: #787885;
   font-size: 14px;
@@ -172,12 +174,37 @@ nav {
   align-items: flex-end;
   font-weight: 700;
   font-size: 16px;
+  position: relative;
+  top: 0;
+  right: 0;
 }
 .see-more span {
   color: #e02c6d;
 }
 
+/* Review Section */
+
+.review-section h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0a0826;
+}
+.reviews {
+  padding: 10px;
+  margin: 20px 0 80px 0;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  text-align: center;
+}
+.reviews img {
+  width: 50%;
+  border-radius: 10px;
+}
+
 /* Footer Section */
+
 footer {
   height: 250px;
   background: #0a0826;
